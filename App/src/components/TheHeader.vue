@@ -4,7 +4,7 @@
             <router-link to="/" class="logo">
                 <img src="@/assets/img/desapega-letter.png" alt="Desapega" width="180">
             </router-link>
-            <router-link class="btn" to="/login">Vender / Login</router-link>
+            <router-link class="btn" to="/login">Anunciar / Entrar</router-link>
         </nav>
     </header>
 </template>

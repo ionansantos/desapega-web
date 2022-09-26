@@ -1,6 +1,63 @@
 
 .form {
-    width: 300px;
-    display: block;
-    margin: 9rem auto 0 auto;
+    display: flex;
+    margin: 4rem auto 0 auto;
+    justify-content: center;
+    
+    .search {
+        padding: 1rem;
+        margin-right: .4rem;
+        border-radius: .3rem;
+        border: 1px solid rgb(185, 180, 202);
+        outline: none;
+        display: block;
+        align-items: center;
+        display: block;
+        width: 800px;
+        transition: .3s;
+        font-size: 1rem;
+        
+        &:hover {
+            // transform: translateY(1px);
+            // width: 800px;
+            border: 1px solid rgb(169, 151, 230);
+        }
+    }
+
+    #lupa {
+        border: 1px solid rgb(185, 180, 202);
+        border-radius: .3rem;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            // transform: translateY(1px);
+            border: 1px solid rgb(169, 151, 230);
+            background-color:  rgb(181, 171, 233);
+        }
+    }
+}
+
+.category {
+    padding: 4rem;
+    width: 100%;
+    .category-list {
+        justify-content: center;
+        display: flex;
+
+        li {
+            transition: .3s;
+            margin: 0 16px;
+
+            &:hover {
+                transform: translatey(2px);
+                cursor: pointer;
+            }
+        }
+    }
+
+    img {
+        margin: 0 auto;
+        width: 30px;
+    }
 }
