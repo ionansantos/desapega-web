@@ -1,14 +1,14 @@
 <template>
 <div>
     <form  class="form">
-    <input class="search" name="search" type="text" id="search" v-model="search" placeholder="Estou procurando por....">
-    <mdicon name="Magnify" size="50" id="lupa" value="search" @click.prevent="SearchProducts"></mdicon>
+    <input id="search" type="text"  v-model="search" placeholder="Estou procurando por....">
+    <input type="submit" id="lupa" value="search" @click.prevent="SearchProducts">
     </form>
     <div class="category">
         <ul class="category-list">
             <li>
-                <img :src="purchases" alt="">
-                <p>mercado</p>
+                <img :src="gym" alt="">
+                <p>Academia</p>
             </li>
             <li>
                 <img :src="travel" alt="">
@@ -23,8 +23,8 @@
                 <p>Musica</p>
             </li>
             <li>
-                <img :src="jobs" alt="">
-                <p>Compras</p>
+                <img :src="sports" alt="">
+                <p>Esportes e Lazer</p>
             </li>
             <li>
                 <img :src="properties" alt="">

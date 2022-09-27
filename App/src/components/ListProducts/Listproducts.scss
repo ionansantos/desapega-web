@@ -1,5 +1,39 @@
-.products-res {
-    width: 300px;
-    display: block;
+.products-container {
+    max-width: 1000px;
     margin: 0 auto;
+    
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin: 30px;
+
+        .products-res {
+            box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
+            padding: 10px;
+            background: #fff;
+            border-radius: 4px;
+            transition: all .2s;
+
+            &:hover {
+                box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+            }
+        }
+
+            .no-products {
+                color: rgb(129, 129, 129);
+                display: block;
+                text-align: center;
+                display: block;
+            }
+    }
+
+    .tittle {
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-weight: bold;
+        color:rgb(112, 54, 219);
+    }
 }

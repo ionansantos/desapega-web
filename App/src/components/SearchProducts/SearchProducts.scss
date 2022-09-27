@@ -1,40 +1,31 @@
 
 .form {
-    display: flex;
-    margin: 4rem auto 0 auto;
-    justify-content: center;
+    max-width: 600px;
+    margin: 4rem auto 60px auto;
+    position: relative;
     
-    .search {
-        padding: 1rem;
+    #search {
+        width: 100%;
+        padding: 22px;
         margin-right: .4rem;
-        border-radius: .3rem;
-        border: 1px solid rgb(185, 180, 202);
-        outline: none;
-        display: block;
-        align-items: center;
-        display: block;
-        width: 800px;
-        transition: .3s;
-        font-size: 1rem;
+        border: none;
         
         &:hover {
-            // transform: translateY(1px);
-            // width: 800px;
-            border: 1px solid rgb(169, 151, 230);
+            box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
         }
     }
 
     #lupa {
-        border: 1px solid rgb(185, 180, 202);
-        border-radius: .3rem;
+        border: none;
         cursor: pointer;
-        transition: .3s;
-
-        &:hover {
-            // transform: translateY(1px);
-            border: 1px solid rgb(169, 151, 230);
-            background-color:  rgb(181, 171, 233);
-        }
+        width: 62px;
+        height: 62px;
+        background: url("@/assets/img/search.svg") no-repeat center center;
+        text-indent: -150px;
+        position: absolute;
+        box-shadow: none;
+        top: 0px;
+        right: 0px;
     }
 }
 
