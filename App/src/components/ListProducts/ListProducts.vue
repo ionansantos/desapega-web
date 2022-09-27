@@ -1,6 +1,6 @@
 <template>
     <section class="products-container">
-        <div v-if="products" class="products">
+        <div v-if="products && products.length" class="products">
             <div class="products-res" v-for="product in products" :key="product.id">
                 <router-link to="/">
                     <img v-if="product.fotos" :src="product.fotos[0].src" :alt="product.fotos[0].titulo">
@@ -10,7 +10,7 @@
                 </router-link>
             </div>
         </div>
-        <div v-else-if="products === 0" class="no-products">
+        <div v-else-if="products && products.length === 0" class="no-products">
             <p>Não foi possível realizar essa Busca...</p>
         </div>
     </section>
