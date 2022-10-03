@@ -1,0 +1,39 @@
+.login {
+    max-width: 400px;
+    margin:  0 auto;
+    padding: 0 20px;
+
+    input, button{
+        border: 1px solid white;
+        width: 400px;
+
+        &:hover {
+            border: 1px solid #87f;
+        }
+    }
+
+    .form {
+        display: grid;
+    }
+
+    .btn {
+        margin: 0 auto;
+    }
+
+    .perdeu {
+        text-align: center;
+        margin: 20px auto 0 auto;
+
+        a:hover {
+            color: #87f;
+            text-decoration: underline;
+        }
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 40px;
+        color: #87f;
+    }
+}

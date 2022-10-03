@@ -14,6 +14,9 @@
         <div v-else-if="products && products.length === 0" class="no-products">
             <p>Não foi possível realizar essa Busca...</p>
         </div>
+        <div v-else>
+            <LoadingPage/>
+        </div>
     </section>
 </template>
 
